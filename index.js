@@ -8,3 +8,6 @@ app.listen(port,()=>{
 //-----------------------------------------//
 const users = require('./routs/users');
 app.use('/users',users);
+
+const measurements = require('./routs/measurements');
+app.use('/measurements',measurements);
