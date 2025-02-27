@@ -1,5 +1,5 @@
 <%- include('top') %>
-<div>
+<div class="container">
   <h1>📜 היסטוריית מדידות</h1>
 
   <form id="dateForm" onsubmit="fetchMeasurements(event)">
@@ -22,7 +22,10 @@
       <tr><td colspan="4">נא לבחור טווח תאריכים ולהציג תוצאות</td></tr>
     </tbody>
   </table>
-</div>
+  <a href="/pages/summary">
+    <button class="summary-btn">📋 מעבר לדף סיכום מדידות כל המשתמשים</button>
+  </a>
+  </div>
 
 <script>
   async function fetchMeasurements(event) {
